@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #160425, #3b128b);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    max-width: 450px;
+    max-height: 100vh;
+    min-width: 360px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+main h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+#genero {
+    font-size: 0.9rem;
+    outline: none;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+span {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    outline: none;
+}
+
+
+form .input-field {
+    margin-bottom: 1.2rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #160425, #3b128b);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #160425, #3b128b);
+}
+
+form input[type="button"] {
+    margin-top: 1.5rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #160425, #3b128b);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="button"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #160425, #3b128b);
+}
+
+#forgot-pass {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #3b128b;
+}
+
+#register {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #3b128b;
+}
